@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Trailer Zone | Home</title>
+</head>
+
+<body>
+    <header class="topheader">
+        <a href="index.html"><img src="assets/img/logo.png" alt="Trailer Zone - Logo" class="logo logo--medium"></a>
+    </header>
+    <div class="gridcontainer">
+            <nav class="sitenav">
+                    <ul>
+                        <li class="userinfo">
+                            <a href="profile.html"><img src="assets/img/userpics/stewyearth.jpg" alt="Trailer zone - User image" class="pageuserpicture"></a>
+                            <label for="userdropdown" class="text--lightblue pageusername">Username<i class="fas fa-angle-down"></i></label>
+                            <input type="checkbox" name="userdropdown" id="userdropdown">
+                            <ul class="userdropdown">
+                                <li>
+                                    <a href="profile.html" class="text--grayish">
+                                        <h3><i class="fas fa-user"></i>Profile</h3>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="settings.html" class="text--grayish">
+                                        <h3><i class="fas fa-cog"></i>Settings</h3>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="login.html" class="text--grayish logout">
+                                        <h3><i class="fas fa-sign-out-alt"></i>Log Out</h3>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="index.html" class="text--grayish">
+                                <h3 class="linktext"><i class="fas fa-home"></i>Home</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <label for="titledropdown" class="text--grayish"><i class="fas fa-angle-down"></i>Titles</label>
+                            <input type="checkbox" name="titledropdown" id="titledropdown">
+                            <ul class="dropdowntitles">
+                                <li>
+                                    <a href="titles.html?" class="text--grayish">
+                                        <h3><i class="fas fa-infinity"></i>All</h3>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="titles.html?sorting=movies" class="text--grayish">
+                                        <h3><i class="fas fa-video"></i>Movies</h3>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="titles.html?sorting=shows" class="text--grayish">
+                                        <h3><i class="fas fa-film"></i>Shows</h3>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="titles.html?sorting=recently_watched" class="text--grayish">
+                                <h3 class="linktext"><i class="far fa-clock"></i>Recently Watched</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="titles.html?sorting=favorites" class="text--grayish">
+                                <h3 class="linktext"><i class="fas fa-heart"></i>Favorites</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="requests.html" class="text--grayish">
+                                <h3 class="linktext"><i class="fas fa-edit"></i>Requests</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="faq.html" class="text--grayish">
+                                <h3 class="linktext"><i class="far fa-question-circle"></i>FAQ</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+        <main class="videopage-main">
+            <article class="video-wrapper">
+                <div class="player">
+                    <div class="loader" style="display: none;">
+                        <p class="loadingtext">Loading...</p>
+                        <div class="ball1"></div>
+                        <div class="ball2"></div>
+                        <div class="ball3"></div>
+                    </div>
+                    <div class="src-error">Error loading media, file might not exist</div>
+                    <video class="player__video viewer" src="" autoplay></video>
+                    <p class="infotext">Volume: 1</p>
+                    <div class="hovertime">02:26</div>
+                    <div class="player__controls">
+                        <div class="progress">
+                            <div class="progress__filled"></div>
+                        </div>
+                        <button class="player__button toggle" title="Toggle Play">►</button>
+                        <p class="time">00:00 / 00:00</p>
+                        <button class="player__button volumeicon"><i class="fas fa-volume-up"></i></button>
+                        <input type="range" name="volume" class="player__slider volume" min="0" max="1" step="0.005"
+                            value="1">
+                        <div class="player__button speed">
+                            <div class="speedmenu">
+                                <button data-speed="2" class="player__button">2x</button>
+                                <button data-speed="1.5" class="player__button">1.5x</button>
+                                <button data-speed="1.25" class="player__button">1.25x</button>
+                                <button data-speed="1" class="player__button">1x</button>
+                                <button data-speed="0.75" class="player__button">0.75x</button>
+                                <button data-speed="0.50" class="player__button">0.50x</button>
+                            </div>
+                            <button class="player__button speedtext">Speed ▴</button>
+                        </div>
+                        <button data-skip="-5" class="player__button">« 5s</button>
+                        <button data-skip="5" class="player__button">5s »</button>
+                        <button class="fullscreen"><i class="fas fa-expand"></i></button>
+                    </div>
+
+                </div>
+                <div class="video-info-container">
+                    <article class="video-info">
+                        <div class="video-info-titleimdb">
+                            <h2 class="text--lightblue mediatitle"></h2>
+                            <h3 class="text--lightblue mediaimdb"></h3>
+                        </div>
+                        <h3 class="text--small text--grayish">Description</h3>
+                        <p class="text--darkgray mediaplot"></p>
+                    </article>
+                    <aside class="videolist">
+                        <select class="videolist-headtext text--grayish">
+                            <option value="">Trailers</option>
+                        </select>
+                        <button class="videolist-btn videolist-btn-active">Trailer 1</button>
+                    </aside>
+            </article>
+    </div>
+    </main>
+    </div>
+
+    <script src="js/usercheck.js"></script>
+    <script src="js/videopage.js"></script>
+    <script src="js/videoplayer.js"></script>
+</body>
+
+</html>

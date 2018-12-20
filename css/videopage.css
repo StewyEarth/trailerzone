@@ -1,0 +1,71 @@
+.videopage-main{
+    background-color: #181818;
+}
+.video-wrapper{
+    margin: 3em 5%; 
+    background-color: #2E2E2E;
+}
+.video-info-container{
+    display: flex;
+    padding: 1.5em 2rem 1.5rem 2rem;
+}
+.video-info{
+    margin-right: 2em;
+    width: 100%;
+}
+.video-info h3{
+    margin: 0;
+}
+.video-info .mediaplot{
+    margin: .5em 0 0 0;
+}
+.video-info-titleimdb{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.video-info-titleimdb h2,.video-info-titleimdb h3 {
+    margin: 0 0 .5em 0;
+}
+.mediatitle{
+    text-transform: capitalize;
+}
+.videolist{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 200px;
+    border-radius: .3em;
+}
+.videolist{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    max-width: 150px;
+    border-radius: .3em;
+    padding: 0 0 1em 0;
+}
+.videolist-headtext{
+    width: 100%;
+    border: solid #1592E6 2px;
+    font-size: 1.2em;
+    text-align: center;
+    background: url(../assets/img/down_arrow.png) no-repeat,#181818;
+    background-position: 95% 50%;
+    padding: .2em 0 .2em 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.videolist-btn{
+    border: none;
+    color: #ffffff;
+    background-color: #181818;
+    padding: .7em;
+}
+.videolist-btn-active{
+    font-weight: bold;
+    background-color: #0f0f0f;
+}

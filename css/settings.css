@@ -1,0 +1,70 @@
+.settings{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    margin: 2em auto;
+    background-color: #181818;
+    width: 80%;
+}
+.setting-title{
+    width: 100%;
+    padding: 1em ;
+    display: flex;
+    justify-content: center;
+    background-color: #232323;
+    margin: 0;
+}
+.settingswithinput{
+    display: flex;
+    align-items: center;
+    padding: 1em;
+}
+.settingswithinput label{
+    flex-basis: 100%;
+    font-size: 1rem;
+    margin: 0;
+}
+.settingswithinput button{
+    border: none;
+    padding: .5em;
+    margin: 0;
+}
+.settingswithinput input{
+    border: none;
+    margin: 0;
+    padding: .5em;
+
+}
+.settingswithinput h2{
+    font-size: 1rem;
+    margin: 0;
+    flex-basis: 100%;
+}
+.settingswithinput select{
+    padding: .5em 1em .5em .5em;
+    border: none;
+    color: #ffffff;
+    background: url(../assets/img/down_arrow.png) no-repeat,#232323;
+    background-position: 95% 50%;
+    border: solid #1592E6 2px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+}
+.change-password{
+    display: flex;
+    flex-direction: column;
+    align-items: initial;
+}
+.change-password button{
+    justify-self: flex-end;
+}
+.change-password-section{
+    display: flex;
+    align-items: center;
+    padding: 0 0 1em 0;
+}
+.change-password-section label{
+    display: flex;
+    margin: 0;
+}
